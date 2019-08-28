@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>Chilla MQTT</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<center>
+  <h1>MQTT</h1>
+  <p>My MQTT Web App</p>
+  <div id="brokerField">
+    <fieldset>
+      <h2>Broker</h2><br><hr>
+      Address: <input type="text" id="address"><br><br>
+      <button id="ConnectBtn">Connect</button><br><br>
+      Status : <textarea id="input"></textarea>
+    </fieldset>
+  </div><br>
+
+  <div id="publishField">
+    <fieldset>
+      <h2>Publish</h2><br><hr>
+      Topic: <input type="text" name="topic"><br><br>
+      Payload: <input type="text" name="payload"><br><br>
+        <button id="PublishBtn">Publish</button>
+    </fieldset>
+  </div><br>
+
+  <div id="subscribeField">
+    <fieldset>
+        <h2>Subscribe</h2><br><hr>
+        Topic: <input type="text" name="topicSubs"><br><br>
+        <button id="SubscribeBtn">Subscribe</button>
+    </fieldset>
+  </div> <br>
+</center>
+
+
+</body>
+<script src="scripts/browserMqtt.js"></script>
+<script src="scripts/controller.js"></script>
+</html>
